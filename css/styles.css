@@ -77,13 +77,13 @@ a {
 /* SECTION TWO: TRANSFORM */
 
 /* Transform Container */
-.transform-area {
+.squares-area {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.transfom-textbox {
+.transform-textbox {
   flex: 1;
   max-width: 720px;
   height: 600px;
@@ -126,15 +126,70 @@ a {
   border-bottom: 10px solid var(--light-yellow-color);
   border-radius: 12px;
 }
+
 .learn-more__red {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: Fraunces, serif;
-  border-bottom: 10px solid var(--light-red-color);
+  border-bottom: 10px solid hsl(7, 92%, 86%);
   border-radius: 12px;
+}
+
+.learn-more__red:hover{
+  border-bottom: 10px solid var(--light-red-color);
 }
 
 .learn-more:hover {
   border-bottom: 10px solid rgb(245, 198, 9);
 }
+
+
+/* Bottom row fruit squares Section Class */
+
+.fruit-squares{
+  display: flex;
+  flex-direction: row;
+  
+}
+/* Container holding the images and the text */
+.fruit-box{
+  max-width: 720px;
+  max-height: 600px;
+}
+/* Container holding the images and the text for graphic design class */
+
+.fruit-box__graphic{
+  position: relative;
+
+}
+.fruit-heading__graphic{
+  position: absolute;
+  top: 350px;
+  left: 300px;
+}
+
+.fruit-body__graphic{
+  position: absolute;
+  top: 400px;
+}
+
+/* Container holding all the images and text for photography class */
+.fruit-box__photography{
+  position: relative;
+}
+
+.fruit-heading__photography{
+  position: absolute;
+  top: 350px;
+  left: 300px
+  
+}
+
+.fruit-body__photography{
+  position: absolute;
+  top: 400px;
+}
+
+
+
