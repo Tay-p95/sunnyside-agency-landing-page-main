@@ -53,6 +53,10 @@
   flex-direction: row;
 }
 
+ul {
+  margin-top: 15px;
+}
+
 .nav-links li {
   display: inline;
   list-style: none;
@@ -68,10 +72,24 @@ a {
   font-family: Barlow, sans-serif;
 }
 
+a:hover{
+  border-bottom: 5px solid var(--light-yellow-color);
+}
+
 .nav-button {
+  font-size: .7rem;
+  font-weight: bold;
+  font-family: Fraunce, serif;
+  background: white;
   border: none;
-  border-radius: 15px;
-  padding: 15px;
+  border-radius: 25px;
+  padding: 13px;
+  width: 90px;
+}
+
+.nav-button:hover{
+  color :white;
+  background: hsl(198, 83%, 82%);
 }
 
 /* SECTION TWO: TRANSFORM */
@@ -164,14 +182,23 @@ a {
 
 }
 .fruit-heading__graphic{
+  font-family: Fraunces, serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dark-green-text);
   position: absolute;
   top: 350px;
-  left: 300px;
+  left: 250px;
 }
 
 .fruit-body__graphic{
+  white-space: wrap;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 20px;
   position: absolute;
   top: 400px;
+  left: 180px
 }
 
 /* Container holding all the images and text for photography class */
@@ -180,6 +207,10 @@ a {
 }
 
 .fruit-heading__photography{
+  font-family: Fraunces, serif;
+  font-weight: bold;
+  color: var(--dark-blue-text);
+  font-size: 1.8rem;
   position: absolute;
   top: 350px;
   left: 300px
@@ -187,8 +218,12 @@ a {
 }
 
 .fruit-body__photography{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 15px;
   position: absolute;
   top: 400px;
+  left: 180px
 }
 
 
