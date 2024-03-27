@@ -5,6 +5,7 @@
   --dark-blue-text: hsl(198, 62%, 26%);
   --footer-cyan-text: hsl(168, 34%, 41%);
   --light-gray-text: hsl(210, 4%, 67%);
+  --bg-white-color: #f2f2f2;
 }
 
 * {
@@ -72,23 +73,23 @@ a {
   font-family: Barlow, sans-serif;
 }
 
-a:hover{
+a:hover {
   border-bottom: 5px solid var(--light-yellow-color);
 }
 
 .nav-button {
-  font-size: .7rem;
-  font-weight: bold;
-  font-family: Fraunce, serif;
+  font-size: 0.7rem;
+  font-weight: semi-bold;
+  font-family: Fraunces, serif;
   background: white;
   border: none;
   border-radius: 25px;
-  padding: 13px;
+  padding: 15px;
   width: 90px;
 }
 
-.nav-button:hover{
-  color :white;
+.nav-button:hover {
+  color: white;
   background: hsl(198, 83%, 82%);
 }
 
@@ -154,7 +155,7 @@ a:hover{
   border-radius: 12px;
 }
 
-.learn-more__red:hover{
+.learn-more__red:hover {
   border-bottom: 10px solid var(--light-red-color);
 }
 
@@ -162,26 +163,23 @@ a:hover{
   border-bottom: 10px solid rgb(245, 198, 9);
 }
 
-
 /* Bottom row fruit squares Section Class */
 
-.fruit-squares{
+.fruit-squares {
   display: flex;
   flex-direction: row;
-  
 }
 /* Container holding the images and the text */
-.fruit-box{
+.fruit-box {
   max-width: 720px;
   max-height: 600px;
 }
 /* Container holding the images and the text for graphic design class */
 
-.fruit-box__graphic{
+.fruit-box__graphic {
   position: relative;
-
 }
-.fruit-heading__graphic{
+.fruit-heading__graphic {
   font-family: Fraunces, serif;
   font-size: 1.8rem;
   font-weight: bold;
@@ -191,40 +189,112 @@ a:hover{
   left: 250px;
 }
 
-.fruit-body__graphic{
+.fruit-body__graphic {
   white-space: wrap;
   font-size: 1.2rem;
   line-height: 1.6;
   padding: 20px;
   position: absolute;
   top: 400px;
-  left: 180px
+  left: 180px;
 }
 
 /* Container holding all the images and text for photography class */
-.fruit-box__photography{
+.fruit-box__photography {
   position: relative;
 }
 
-.fruit-heading__photography{
+.fruit-heading__photography {
   font-family: Fraunces, serif;
   font-weight: bold;
   color: var(--dark-blue-text);
   font-size: 1.8rem;
   position: absolute;
   top: 350px;
-  left: 300px
-  
+  left: 300px;
 }
 
-.fruit-body__photography{
+.fruit-body__photography {
   font-size: 1.2rem;
   line-height: 1.6;
   padding: 15px;
   position: absolute;
   top: 400px;
-  left: 180px
+  left: 180px;
 }
 
+/* Client Testimonials Section */
 
+.client-testimonials {
+  display: flex;
+  max-width: 100%;
+  max-height: 750px;
+}
 
+/* Individual Clients */
+.client-type{
+ 
+}
+.client-img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 35px;
+}
+.client-description{
+margin-bottom: 25px;
+color: rgb(88, 86, 86);
+}
+
+.client-name{
+  font-family: fraunces, serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+}
+
+.client-job{
+  color: var(--light-gray-text);
+}
+
+.client-heading {
+  max-width: 100%;
+  max-height: 20px;
+  font-family: fraunces, serif;
+  text-transform: uppercase;
+  color: var(--light-gray-text);
+  font-size: 1.3rem;
+  margin: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients {
+  margin-top: 100px;
+  margin-left: 20px;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.bottom-gallery {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-img{
+  width: 100%;
+
+}
+
+/* Footer Area */
+
+.footer-details{
+  max-width: 100%;
+  max-height: 350px;
+}
+
+.footer-logo{
+  color:hsl(167, 40%, 24%);
+}
